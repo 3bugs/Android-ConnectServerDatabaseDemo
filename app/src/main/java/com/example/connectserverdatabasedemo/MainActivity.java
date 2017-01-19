@@ -63,8 +63,8 @@ public class MainActivity extends AppCompatActivity {
                     mLastNameEditText.setError("ป้อนนามสกุล");
                     mLastNameEditText.requestFocus();
                 } else {
-                    String name = "พร้อมเลิศ"; //mNameEditText.getText().toString();
-                    String lastName = "หล่อวิจิตร"; //mLastNameEditText.getText().toString();
+                    String name = mNameEditText.getText().toString();
+                    String lastName = mLastNameEditText.getText().toString();
                     addData(name, lastName);
                 }
             }
